@@ -27,7 +27,8 @@ jobs:
         env:
           GITHUB_ACTION_PATH: ${{ github.action_path }}
 
+      - name: Make goodbye.sh Executable
+        run: chmod +x goodbye.sh
+
       - name: Run goodbye.sh
         run: ./goodbye.sh
-        shell: bash
-
