@@ -1,6 +1,11 @@
-name: 'Hello World'
-on: push
+on:
+  pull_request:
+  push:
+    branches: ["master"]
+
+name: Unit tests
 description: 'Greet someone'
+jobs:
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
