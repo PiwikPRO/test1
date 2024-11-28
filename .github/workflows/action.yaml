@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+  workflow_call: # Enables this workflow to be reusable
 
 jobs:
   greet-and-test:
